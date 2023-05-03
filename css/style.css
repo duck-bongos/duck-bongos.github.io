@@ -375,6 +375,29 @@ ul {
     margin-inline: auto;
 }
 
+.icon-list {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+
+.icon-list li {
+    margin-right: 2px;
+}
+
+.logo {
+    width: 60px;
+    height: 48px;
+}
+
+.logo-wide {
+    width: 100px;
+    height: 80px;
+}
+
 
 /* line */
 ul::before {
@@ -523,27 +546,4 @@ ul li .descr::before {
     ul li:nth-child(odd) .date {
         border-radius: 0 calc(var(--dateH) / 2) calc(var(--dateH) / 2) 0;
     }
-}
-
-.icon-list {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    justify-content: center;
-}
-
-.icon-list li {
-    margin-right: 2px;
-}
-
-.logo {
-    width: 60px;
-    height: 48px;
-}
-
-.logo-wide {
-    width: 100px;
-    height: 80px;
 }
