@@ -30,7 +30,7 @@ Played a loooooot of beach volleyball. Made about $400. Find more under Athletic
 
 # Bloomberg LP 2017-2021 <img src="{{ site.baseurl }}/assets/work_logos/bloomberg.png" style="float: left; width:50px; height:50px; display: block; margin-right:10px " >
 
-### Purgatory _(February 2021-June 2021)_
+### Limbo _(February 2021-June 2021)_
 Honest to all deities ever - I don't remember a single thing I did here besides grieve the loss of my awesome team. Whatever I did didn't matter.
 
 ### The Koality Koalas  _(June 2019 ~ January 2021)_
