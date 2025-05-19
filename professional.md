@@ -6,11 +6,8 @@ main_nav: true
 nav_order: 2
 ---
 
-# [Current Resume]({{ site.baseurl }}/assets/resume.pdf){:target="_blank"}
-
 # Professional Experience
-I feel fortunate to have worked for the companies I have. 
-A brief history. It reads most recent to oldest in a much more anecdotal way about feelings - cool things that happened, tough people to work with, lessons learned. It's almost like a journal.
+I feel fortunate for the breadth of companies I've worked for so far. This page serves as a brief history. It reads newest to oldest in a much more anecdotal way, focusing on feelings - cool things that happened, tough  lessons learned, and checkpoints in life. It's almost like a journal.
 
 # <img src="{{ site.baseurl }}/assets/work_logos/osh.avif" style="float: left; width:50px; height:50px; display: block; margin-right:10px " > Oak Street Health 
 ## Rewriting the Rewritten System

@@ -1,7 +1,5 @@
 ---
 layout: default
-pagination: 
-  enabled: true
 ---
 <div class="home">
 
@@ -11,5 +9,14 @@ pagination:
       <h1 class="title">{{ site.title }}</h1>
       {% if site.subtitle %}<p class="subtitle">{{ site.subtitle }}</p>{% endif %}
     </header>
+  </div>
+</div>
+
+<div class="wrapper">
+  <div class="page">
+    {% capture about_content %}
+      {% include_relative About.md %}
+    {% endcapture %}
+    {{ about_content | markdownify }}
   </div>
 </div>
