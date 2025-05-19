@@ -51,15 +51,16 @@ I arrived at Stony Brook University with a lot of confidence in my abilities. I 
 I took an internship at a startup called [VideaHealth](https://www.videa.ai/) based in Boston. Because of my punitive lease, I didn't move there and worked remote, traveling up twice. The company was awesome because it completely changed how I looked at writing code. Where at Bloomberg I had to ensure every line was unit tested and typehinted, in a start up those things can fall to the wayside because you're moving at a breakneck pace. It was my first education in professional prioritization under duress.
 
 ### Back to the Storm
-I finally got the chance to take a computer vision class, what I thought I wanted for 2 years. It was cool but ultimately was disappointed, especially by the enforcement of academic honesty. Then I learned my topic of choice was either PhD-big or not a good idea. So I decided it'd be best to get out ASAP. Did my thesis with computational geometry and discrete mathematic icon [David Gu](https://www3.cs.stonybrook.edu/~gu/). After graduation, I struggled to land a job in the worst job market for computer scientists in years. Compared to 2019, where the word "Python" on your resume would get you an offer for $150K (hyperbole)
+I finally got the chance to take a computer vision class, what I thought I wanted for 2 years. It was cool but ultimately was disappointed, especially by the enforcement of academic honesty. Then I learned my topic of choice was either PhD-big or not a good idea, clinically speaking. So I decided it'd be best to get out ASAP. I did my thesis with computational geometry and discrete mathematics icon [David Gu](https://www3.cs.stonybrook.edu/~gu/) exploring intersections between computer vision and computational geometry ([here if you want it...](https://commons.library.stonybrook.edu/cgi/viewcontent.cgi?article=1035&context=electronic-disserations-theses)). After graduation, I struggled to land a job in the worst job market for computer scientists in years. At the end of the summer, I accepted an offer for a position starting in October 2023.
 
-###
+### Vastly Improving Conditions
 
-🤓 Philadelphia, PA - 30s+
+[![alt text]({{ site.baseurl }}/assets/philly.jpeg "Philadelphia, PA")](https://www.lonelyplanet.com/destinations/usa/pennsylvania/philadelphia){:target="_blank"}
 
-❓ TBD, TBD
+In October, I started at [Oak Street Health](https://www.oakstreethealth.com/) as a Machine Learning Engineer. It is a remote position, meaning I could choose wherever I wanted to live. After considering a move to Boston, Chicago, and the West Coast, I elected to move closer to my friends and try out a new city, settling on Philadelphia. I love it here. 
 
-# Where I'm Going
+
+# The Journey Continues
 🖥️ Do awesome stuff with tech
 
 🏃 Do awesome stuff with sports
@@ -77,3 +78,10 @@ Shout out to [Ben Centra][bencentra] for putting this [Jekyll][jekyll] [theme to
 [centrarium]: https://github.com/bencentra/centrarium
 [bencentra]: http://bencentra.com
 [jekyll]: https://github.com/jekyll/jekyll
+
+### Photo Credits
+I only own2 2 photos:
+- The Cover
+- My Face
+
+I did not seek permission or own any of the others. I attempted to hyperlink each photo to its source in order to promote traffic to where credit is due. They're also usually top 5 results on Google, which arguably has more reach than this website.
