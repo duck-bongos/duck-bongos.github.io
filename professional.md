@@ -6,6 +6,8 @@ main_nav: true
 nav_order: 2
 ---
 
+# [Current Resume]({{ site.baseurl }}/assets/resume.pdf){:target="_blank"}
+
 # Professional Experience
 A brief history. It reads most recent to oldest in a much more anecdotal way about feelings - cool things that happened, tough people to work with, lessons learned. It's almost like a journal.
 
