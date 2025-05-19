@@ -9,6 +9,7 @@ nav_order: 2
 # [Current Resume]({{ site.baseurl }}/assets/resume.pdf){:target="_blank"}
 
 # Professional Experience
+I feel fortunate to have worked for the companies I have. 
 A brief history. It reads most recent to oldest in a much more anecdotal way about feelings - cool things that happened, tough people to work with, lessons learned. It's almost like a journal.
 
 # <img src="{{ site.baseurl }}/assets/work_logos/osh.avif" style="float: left; width:50px; height:50px; display: block; margin-right:10px " > Oak Street Health 
@@ -18,7 +19,7 @@ Ongoing... stay tuned.
 ## RAG Developer for a Day
 Figured out how to query OpenAI 30K times/hour then turn it into a pip-installable package for all our developers. I really enjoyed taking a Proof-of-Concept to production and making it reusable & configurable. Got to fix many of my mistakes in V2, which was so much better, then it got left on the shelf because CVS didn't want to use it. Became competent at `asyncio`, reusable design, and `importlib`.
 
-## Rewriting Existing System
+## Rewriting Existing Machine Learning System
 They already had a system in place. It was hacked together pretty badly. I hacked a new version together differently. Lesson learned, when everyone is telling you to speed up, take some time to pick your head up and explore solutions. I also learned Databricks was going to be my enemy. 7 layers of environments, 2 of which attach to Spark - my god. I don't know Docker but your clusterf*** (they use clusters - get it?) made me start to learn it.
 
 # <img src="{{ site.baseurl }}/assets/work_logos/videa.png" style="float: left; width:50px; height:50px; display: block; margin-right:10px " > Videa Health - Summer 2022 
