@@ -15,18 +15,29 @@ If you're a recruiter interested in hiring me, please navigate to the Profession
 
 # Where I'm Going
 🖥️ Do awesome stuff with tech
+
 🏃 Do awesome stuff with sports
+
 🫂 Share life with awesome people
+
+🌏 Traveling around the world
+
 📖 Find a synonym for "awesome"
-🌏 Around the world
+
 
 # Where I'm From
 👶 VA & PA - Early
+
 🎓 Cincinnati, Ohio - Childhood, High School, College
+
 🏐 Princeton, New Jersey - Early 20s
+
 😭 Long Island, NY - Mid-to-Late 20s
+
 🤓 Philadelphia, PA - 30s+
+
 ❓ TBD, TBD
+
 
 ### Acknowledgements
 Shout out to [Ben Centra][bencentra] for putting this [Jekyll][jekyll] [theme together][centrarium] for my website.
