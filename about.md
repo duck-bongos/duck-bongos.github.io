@@ -4,11 +4,13 @@
 
 ![alt text]({{ site.baseurl }}/assets/profile.gif "Profile Picture"){:.profile}
 
-Hi! My name is Dan. I like striving for _magis_, or "more" excellence in my life, particularly around cognitive curiosities, athletic goals, and relationships with people. Feel free to poke around, read more, or send me an email.
+Hi! My name is Dan a.k.a [duck-bongos](/etymology/). I like striving for _magis_, or "more" excellence in my life, particularly around cognitive curiosities, athletic goals, and relationships with people. Feel free to poke around, read more, or send me an email.
 
-If you're a recruiter interested in hiring me, please navigate to the Professional section, find the Easter Egg, pull my resume for your own purposes, and send me a message through the instructions there. Otherwise, I hope you enjoy this! I certainly had fun making it.
+If you're a recruiter interested in hiring me, please **first check my resume** for a potential fit (below). Then, if you think navigate to the [Professional section](/work/), find the Easter Egg Instructions to show you're interested (my mom found it in `13 seconds`, can you?).  
 
-# [Download Resume]({{ site.baseurl }}/assets/resume.pdf){:target="_blank"}
+Otherwise, I hope you enjoy this! I certainly had fun making it.
+
+# [View Resume]({{ site.baseurl }}/assets/resume.pdf){:target="_blank"}
 
 # Where I'm From
 ### Origin Point
