@@ -6,11 +6,12 @@
 
 Hi! My name is Dan a.k.a [duck-bongos](/etymology/). I like striving for _magis_, or "more" excellence in my life, particularly around cognitive curiosities, athletic goals, and relationships with people. Feel free to poke around, read more, or send me an email.
 
-If you're a recruiter interested in hiring me, please **first check my resume** for a potential fit (below). Then, if you think navigate to the [Professional section](/work/), find the Easter Egg Instructions to show you're interested (my mom found it in `13 seconds`, can you?).  
+If you're a recruiter interested in hiring me, please **[first check my resume]({{ site.baseurl }}/assets/resume.pdf){:target="_blank"}** for a potential fit. Then, if you think navigate to the [Professional section](/work/), find the Easter Egg Instructions to show you're interested (my mom found it in _13 seconds_, can you?).  
 
 Otherwise, I hope you enjoy this! I certainly had fun making it.
 
 # [View Resume]({{ site.baseurl }}/assets/resume.pdf){:target="_blank"}
+
 
 # Where I'm From
 ### Origin Point

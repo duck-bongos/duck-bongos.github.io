@@ -79,3 +79,5 @@ My first job! Top pick for company, let down by experience / learned what I like
 
 # <img src="{{ site.baseurl }}/assets/eggs.png" style="float: left; width:50px; height:50px; display: block; margin-right:10px " > Easter Egg Instructions
 If you're interested in contacting me for a potential position, please send me an email at [dan.billmann.13@gmail.com](mailto:dan.billmann.13@gmail.com) with the subject "I Like Hot Sauce". In the body, please put the job description as well as the compensation range you've been instructed to target. I look forward to speaking with you!
+
+# [View Resume]({{ site.baseurl }}/assets/resume.pdf){:target="_blank"}
