@@ -10,7 +10,7 @@ nav_order: 3
 Currently injured, but whatever! Mind's still in the game.
 
 ### Mostly Beach Volleyball
-Formerly ranked top #400 in the country, graduate school and injuries set me back prety hard. These are from some ofthe good times: 
+Formerly ranked top #400 in the country, graduate school and injuries set me back prety hard. These are from some of the good times: 
 
 <div style="display: flex; gap: 10px; justify-content: center;">
 <img src="{{ site.baseurl }}/assets/sports/pottstown_pose.jpg" style="float: left; width:30%; height:200px; " >
