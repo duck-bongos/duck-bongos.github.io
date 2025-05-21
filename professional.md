@@ -6,8 +6,8 @@ main_nav: true
 nav_order: 2
 ---
 
-# Professional Experience
-I feel fortunate for the breadth of companies I've worked for so far. This page serves as a brief history. It reads newest to oldest in a much more anecdotal way, focusing on feelings - cool things that happened, tough lessons learned, and checkpoints in life. It's almost like a journal. 
+# [Professional Experience]({{ site.baseurl }}/assets/resume.pdf){:target="_blank"}
+I feel fortunate for the breadth of companies I've worked for so far. This page serves as a brief history. It reads newest to oldest in a much more anecdotal way, focusing on feelings - cool things that happened, tough lessons learned, and checkpoints in life. It's almost like a journal.
 
 ### <img src="{{ site.baseurl }}/assets/work_logos/osh.avif" style="float: left; width:50px; height:50px; display: block; margin-right:10px " > Oak Street Health
 #### Rewriting the Rewritten System
@@ -84,6 +84,6 @@ In the mostly-frozen spring semester of 2014 I wrote thousands of lines of excel
 My first job! Top pick for company, let down by experience / learned what I like and don't. I was hired as a freshman Sales intern for [Paycor](https://www.paycor.com/). I was not good at it. Cold calling people may be my worst skill. The one thing I liked was a project around customer data in my last 3 weeks. Wheels began to turn ⚙️⚙️
 
 # <img src="{{ site.baseurl }}/assets/eggs.png" style="float: left; width:50px; height:50px; display: block; margin-right:10px " > Easter Egg Instructions
-If you're interested in contacting me for a potential position, please send me an email at [dan.billmann.13@gmail.com](mailto:dan.billmann.13@gmail.com) with the subject "I Like Hot Sauce". In the body, please put the job description as well as the compensation range you've been instructed to target. I look forward to speaking with you!
+If you're interested in contacting me for a potential position, please send me an email at [dan.billmann.13@gmail.com](mailto:dan.billmann.13@gmail.com) with the subject "Hotter Job Than Hot Sauce". In the body, please put the job description as well as the compensation range you've been instructed to target. I look forward to speaking with you!
 
 # [View Resume]({{ site.baseurl }}/assets/resume.pdf){:target="_blank"}
