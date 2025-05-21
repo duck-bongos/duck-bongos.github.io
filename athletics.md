@@ -20,7 +20,7 @@ Formerly ranked top #400 in the country, graduate school and injuries set me bac
 
 - _Left_: Took 9th out of 142 Men's teams - paid for the whole weekend! 
 - _Center_: Got featured on some blog, that was cool. 
-- _Right_: Earned my best fininsh back home in Cincinnati of 2nd.
+- _Right_: Earned my best finish back home in Cincinnati of 2nd.
 
 ### Animal Flow
 Easily my favorite workouts ever - [bear crawls, bunny hops, crab walks](https://www.youtube.com/shorts/wsxZV2z9jwg) - move like an animal & put it all together! It was such a shame when I hurt myself doing them last year. Excited to get back.
