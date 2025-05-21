@@ -7,19 +7,25 @@ nav_order: 2
 ---
 
 # Professional Experience
-I feel fortunate for the breadth of companies I've worked for so far. This page serves as a brief history. It reads newest to oldest in a much more anecdotal way, focusing on feelings - cool things that happened, tough  lessons learned, and checkpoints in life. It's almost like a journal.
+I feel fortunate for the breadth of companies I've worked for so far. This page serves as a brief history. It reads newest to oldest in a much more anecdotal way, focusing on feelings - cool things that happened, tough lessons learned, and checkpoints in life. It's almost like a journal. 
 
 ### <img src="{{ site.baseurl }}/assets/work_logos/osh.avif" style="float: left; width:50px; height:50px; display: block; margin-right:10px " > Oak Street Health
 #### Rewriting the Rewritten System
-**(Mar 2025 - )** We're figuring out what we _want_ to do... stay tuned.
+**(Mar 2025 - )** We're figuring out what we _want_ to do... stay tuned. I'm very excited for this because I feel on the cusp of serious engineering growth. Azure feels like it should have all the pieces in place to build a robust system, I'm not sure what that solution space is yet.
 
 #### RAG Developer for a Day
-**(Aug 2024 - Feb 2025)** Figured out how to query OpenAI 30K times/hour then turn it into a pip-installable package for all our developers. I really enjoyed taking a Proof-of-Concept to production and making it reusable & configurable. Got to fix many of my mistakes in V2, which was so much better, then it got left on the shelf because CVS didn't want to use it. Became competent at `asyncio`, reusable design, and `importlib`. 
+**(Aug 2024 - Feb 2025)** Figured out how to query OpenAI 30K times/hour then turn it into a pip-installable package for all our developers. I really enjoyed taking a proof-of-concept to production and making it reusable & configurable. Got to fix many of my mistakes in V2, which was so much better, then it got left on the shelf because CVS's ML team didn't want to use it ¯\\\_(ツ)\_/¯
 
-As part of the CVS acquisition of Oak Street, I got demoted "in title only" from `Machine Learning Enginer II - MLOps` → `Machine Learning Engineer I` around this time. What the heck! Oh well. Role responsibilities are the same.
+ I'm a better programmer for it. Became competent at `asyncio`, reusable design, and `importlib`. It was my first somewhat successful attempt at dependency injection! Pretty proud of that.
 
 #### Rewriting Existing Machine Learning System
-**(Oct 2023 - Aug 2024)** They already had a hacked-together system in place. I hacked a new version together differently, arguably better, but far from optimal. Lesson learned, when everyone is telling you to speed up, take some time to pick your head up and explore solutions. I also learned Databricks was going to be my enemy. 7 layers of environments, 2 of which attach to Spark - my god. I don't know Docker but your clusterf*** (they use clusters - get it?) made me start to learn it.
+**(Oct 2023 - Aug 2024)** I spent much of this time re-writing the existing system (technically twice) to make it more modular. I did not ask enough questions about the way we _should_ be doing things and shoehorned a new implementation into a current design. In graduate school, I discovered that when I re-allocate my time from 80-90% writing code and 10-20% reading documentation to 70-80% reading documentation and techniques, still takes the same amount of total time to complete because I have a much clearer idea of what I'm doing.
+
+I didn't do that. I tried to finish it as quickly as possible.
+
+Exploring alternative solutions is worth at least a few hours, especially when you're new to the company or team. I also learned Databricks, particularly its notebook implementation, was going to be my enemy. 7 layers of environments, 2 of which attach to Spark in order to interface with the rest of the ecosystem does not make for easily repeatable coding. I didn't know Docker but their clusterf***s (they use clusters - get it?) made me start to learn it. 
+
+On balance, I think their MLFlow integration is top notch and their data availability is incredibly strong. 
 
 ### <img src="{{ site.baseurl }}/assets/work_logos/videa.png" style="float: left; width:50px; height:50px; display: block; margin-right:10px " > Videa Health
 **(Summer 2022)** Interning again! My seventh internship experience. Seven. I spent two and one-third years as an intern. Give me a job already! Goodness.
