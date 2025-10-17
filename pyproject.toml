@@ -1,0 +1,11 @@
+[project]
+name = "duck-bongos-github-io"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "mkdocs>=1.6.1",
+    "mkdocs-landing>=0.0.8",
+    "mkdocs-material>=9.6.22",
+]

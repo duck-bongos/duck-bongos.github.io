@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dan Billmann</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <h1 id="typewriter-career"></h1>
+    <a href="index.html" class="text-link">Home</a>
+    <script>
+        let typingSpeed = 70;
+      let careerIndex = 0;
+      const careerElement = document.getElementById("typewriter-career");
+      const careerText = "Professional Career";
+      function careerWriter() {
+        if (careerIndex < careerText.length) {
+          careerElement.textContent += careerText.charAt(careerIndex);
+          careerIndex++;
+          setTimeout(careerWriter, typingSpeed);
+        }
+      }
+
+      window.onload = careerWriter;
+    </script>
+  </body>
+</html>
