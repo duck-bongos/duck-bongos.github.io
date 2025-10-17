@@ -16,22 +16,22 @@
       <li><a href="contact.html">Contact</a></li>
     </ul>
     <div class="main-container">
-      <h1 id="typewriter-career"></h1>
+      <h1 id="typewriter-contact"></h1>
     </div>
     <script>
       let typingSpeed = 70;
-      let careerIndex = 0;
-      const careerElement = document.getElementById("typewriter-career");
-      const careerText = "Professional Career";
-      function careerWriter() {
-        if (careerIndex < careerText.length) {
-          careerElement.textContent += careerText.charAt(careerIndex);
-          careerIndex++;
-          setTimeout(careerWriter, typingSpeed);
+      let contactIndex = 0;
+      const contactElement = document.getElementById("typewriter-contact");
+      const careerText = "Contact Me";
+      function contactWriter() {
+        if (contactIndex < careerText.length) {
+          contactElement.textContent += careerText.charAt(contactIndex);
+          contactIndex++;
+          setTimeout(contactWriter, typingSpeed);
         }
       }
 
-      window.onload = careerWriter;
+      window.onload = contactWriter;
     </script>
   </body>
 </html>
