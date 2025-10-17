@@ -22,131 +22,165 @@ Saffron: F9C22E  / F4C430
 Cinnabar: #E34234
 Viridian:  #40826D
 
+
+
 */
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --tertiary-color: rgba(255, 25, 255, 50);
+}
+
 html {
-    min-height:auto;
+  min-height: auto;
 }
 
 body {
-    font-size: 18px;
-    font-family: monospace;
-    margin: 0;
-    /* margin-left: 10%;
-    margin-right: 10%;
-    padding: 20px; */
+  font-size: 18px;
+  font-family: monospace;
+  margin: 0;
 }
 
 div.main-container {
-    display: flex;
-    text-align:center;
-    padding: 20px;
+  display: flex;
+  text-align: center;
+  padding: 20px;
+  max-width: 100%;
 }
 
+div.container p {
+  text-align: left;
+  text-indent: 50px;
+}
+
+div.company-header,
+div.role-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+div.role-header h4 {
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+h3.company-name,
+h4.job-title,
+h4.company-daterange,
+h5.job-daterange {
+  margin-block-start: 0.1rem;
+  margin-block-end: 0.2rem;
+}
+
+div.role-body {
+    text-align: left;
+    padding-left: 2%;
+    padding-right: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
 h3.section-heading {
-    display: flex;
-    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    justify-content: center;
-    align-content: center;
-
+  display: flex;
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  justify-content: center;
+  align-content: center;
 }
 
 @media (prefers-color-scheme: dark) {
   html body {
-    background-color: #2C6F8C; /* Dark background */
+    background-color: var(--primary-color) /* Dark background */;
     color: #f0f0f0; /* Light text */
   }
 }
 
 @media (prefers-color-scheme: light) {
-    html body {
-        background-color: #E5E4E2;
-    }
+  html body {
+    background-color: #e5e4e2;
+  }
 }
 
 h1 {
-    text-align: center;
+  text-align: center;
 }
 
 div.projects {
-    justify-content: center;
-    display:flex;
-    /* justify-content: center; */
-    /* margin: auto; */
+  justify-content: center;
+  display: flex;
+  /* justify-content: center; */
+  /* margin: auto; */
 }
 
 div.flex-container {
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
 }
-
-
 
 a {
-    /* color: #F9C784; */
-    color: #f0f0f0;
-    text-decoration: none;
+  /* color: #F9C784; */
+  color: #f0f0f0;
+  text-decoration: none;
 }
 a.text-link {
-    color: #FC440F;
-    text-decoration: underline;
+  color: #fc440f;
+  text-decoration: underline;
 }
 a.text-link-career {
-    color: #CCDBDC;
-    text-decoration: underline;
-    
-    
+  color: #ccdbdc;
+  text-decoration: underline;
 }
-a.text-link-career:visited{
-    color: #FF3C38
+a.text-link-career:visited {
+  color: #ff3c38;
 }
 
 a.text-link:visited {
-    color:#F9C22E
+  color: #f9c22e;
 }
 a:visited {
-    color: #f0f0f0
+  color: #f0f0f0;
 }
- 
+
 p {
-    text-align: center;
-    font-size: 16px;
+  text-align: center;
+  font-size: 16px;
 }
 
 img {
-    border: 1px;
-    border-color: #533747;
+  border: 1px;
+  border-color: #533747;
 }
 
 .card {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    flex-shrink:10;
-    height: 12rem;
-    width: 11rem;
-    border-radius: 1rem;
-    padding: 1rem 1rem 1rem 1rem;
-    margin: 1rem 1rem 1rem 1rem;
-    background-color: #6EB4D1 
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 10;
+  height: 12rem;
+  width: 11rem;
+  border-radius: 1rem;
+  padding: 1rem 1rem 1rem 1rem;
+  margin: 1rem 1rem 1rem 1rem;
+  background-color: #6eb4d1;
 }
 
 .card.card-logos {
-    flex-direction: row;
+  flex-direction: row;
 }
 
 .tiny-card {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    flex-shrink:10;
-    height: 2rem;
-    width: 2rem;
-    border-radius: 1rem;
-    padding: 1rem 1rem 1rem 1rem;
-    margin: 1rem 1rem 1rem 1rem;
-    
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 10;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 1rem;
+  padding: 1rem 1rem 1rem 1rem;
+  margin: 1rem 1rem 1rem 1rem;
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -157,25 +191,24 @@ img {
 } */
 
 @media (prefers-color-scheme: light) {
-    .tiny-card {
-        background-color: #C3C2C1;  
-    }
+  .tiny-card {
+    background-color: #c3c2c1;
+  }
 }
 
 div.contact {
-    display: flex;
-    justify-content: center;
-    align-content: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 
 @media (prefers-color-scheme: dark) {
-    div.contact-item {
-        /* 0B3C49 */
-        /* background-color: #FEFEFE ;  */
-        border-radius:1px;
-    }
+  div.contact-item {
+    /* 0B3C49 */
+    /* background-color: #FEFEFE ;  */
+    border-radius: 1px;
+  }
 }
-
 
 /*NAVBAR TUTORIAL*/
 /* h2, p {
@@ -183,15 +216,20 @@ div.contact {
 } */
 
 ul {
-    margin-block-start: 0;
+  background-color: #d9a108;
+  margin-block-start: 0;
   list-style-type: none;
   min-width: 100%;
   padding: 0;
   overflow: hidden;
-  background-color: #14313E;
   color: black;
   border-color: black;
+  align-items: center;
+}
 
+ul.career-toc {
+  color: white;
+  background-color: var(--primary-color);
 }
 
 ul li {
@@ -207,11 +245,16 @@ ul li a {
 }
 
 ul li a:hover {
-  background-color: #D9A108; /* #F9C22E; */
-  color:black;
+  background-color: var(--tertiary-color); /* #F9C22E; */
+  color: black;
 }
 
 ul li a.selected {
-    background-color: #F9C22E;
-    color: black;
+  background-color: var(--tertiary-color);
+  color: black;
+}
+
+ul li a.visited {
+  background-color: #d9a108;
+  color: black;
 }
