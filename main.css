@@ -1,3 +1,6 @@
+/* current palette Oct 17 2025 
+https://coolors.co/14313e-d9a108-ffffff-2c6f8c-fc440f
+*/
 /* 
 Titanium: E5E4E2
 Eggplant: 533747
@@ -8,27 +11,35 @@ Golden Gate Bridge: F24C00
 */
 
 /* Other colors
-Pewter: 
-Cerulean: 
-Vermilion: 
-Celadon: 
-Fuschia: 
-Saffron: 
-Cinnabar: 
-Viridian:  
+[ coooler / HTMLPicker ]
+
+Pewter: / 899499
+Cerulean: 2C6F8C /
+Vermilion: FF3C38
+Celadon: / #AFE1AF
+Fuschia: / #FF00FF
+Saffron: F9C22E  / F4C430
+Cinnabar: #E34234
+Viridian:  #40826D
 
 */
 html {
     min-height:auto;
-    margin: 50px;
 }
 
 body {
+    font-size: 18px;
     font-family: monospace;
-    /* display: flex; */
-    /* text-align:center; */
-    margin-left: 10%;
+    margin: 0;
+    /* margin-left: 10%;
     margin-right: 10%;
+    padding: 20px; */
+}
+
+div.main-container {
+    display: flex;
+    text-align:center;
+    padding: 20px;
 }
 
 
@@ -61,7 +72,7 @@ div.projects {
     justify-content: center;
     display:flex;
     /* justify-content: center; */
-    margin: auto;
+    /* margin: auto; */
 }
 
 div.flex-container {
@@ -72,8 +83,14 @@ div.flex-container {
 
 
 
+a {
+    /* color: #F9C784; */
+    color: #f0f0f0;
+    text-decoration: none;
+}
 a.text-link {
-    color: #F9C22E
+    color: #FC440F;
+    text-decoration: underline;
 }
 a.text-link-career {
     color: #CCDBDC;
@@ -84,11 +101,7 @@ a.text-link-career {
 a.text-link-career:visited{
     color: #FF3C38
 }
-a {
-    /* color: #F9C784; */
-    color: #f0f0f0;
-    text-decoration: none;
-}
+
 a.text-link:visited {
     color:#F9C22E
 }
@@ -98,7 +111,7 @@ a:visited {
  
 p {
     text-align: center;
-    font-size: 12px;
+    font-size: 16px;
 }
 
 img {
@@ -111,8 +124,8 @@ img {
     display: flex;
     flex-direction: column;
     flex-shrink:10;
-    height: 9rem;
-    width: 8rem;
+    height: 12rem;
+    width: 11rem;
     border-radius: 1rem;
     padding: 1rem 1rem 1rem 1rem;
     margin: 1rem 1rem 1rem 1rem;
@@ -149,9 +162,6 @@ img {
     }
 }
 
-div.tiny-card {
-    font-size: 9px;
-}
 div.contact {
     display: flex;
     justify-content: center;
@@ -164,4 +174,44 @@ div.contact {
         /* background-color: #FEFEFE ;  */
         border-radius:1px;
     }
+}
+
+
+/*NAVBAR TUTORIAL*/
+/* h2, p {
+  margin: 10px;
+} */
+
+ul {
+    margin-block-start: 0;
+  list-style-type: none;
+  min-width: 100%;
+  padding: 0;
+  overflow: hidden;
+  background-color: #14313E;
+  color: black;
+  border-color: black;
+
+}
+
+ul li {
+  float: left;
+}
+
+ul li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: #D9A108; /* #F9C22E; */
+  color:black;
+}
+
+ul li a.selected {
+    background-color: #F9C22E;
+    color: black;
 }
