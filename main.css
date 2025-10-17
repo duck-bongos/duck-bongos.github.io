@@ -1,0 +1,155 @@
+/* 
+Titanium: E5E4E2
+Eggplant: 533747
+Midnight Green: 0B3C49
+Caroline Blue: 6EB4D1
+Sunset: F9C784
+Golden Gate Bridge: F24C00 
+*/
+html {
+    min-height:auto;
+    margin: 50px;
+}
+
+body {
+    font-family: monospace;
+    /* display: flex; */
+    /* text-align:center; */
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+
+h3.section-heading {
+    display: flex;
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    justify-content: center;
+    align-content: center;
+
+}
+
+@media (prefers-color-scheme: dark) {
+  html body {
+    background-color: #2C6F8C; /* Dark background */
+    color: #f0f0f0; /* Light text */
+  }
+}
+
+@media (prefers-color-scheme: light) {
+    html body {
+        background-color: #E5E4E2;
+    }
+}
+
+h1 {
+    text-align: center;
+}
+
+div.projects {
+    justify-content: center;
+    display:flex;
+    /* justify-content: center; */
+    margin: auto;
+}
+
+div.flex-container {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+a.text-link {
+    color: #F24C00
+}
+a.text-link-career {
+    color: #CCDBDC;
+    text-decoration: underline;
+    
+    
+}
+a.text-link-career:visited{
+    color: #FF3C38
+}
+a {
+    /* color: #F9C784; */
+    color: #f0f0f0;
+    text-decoration: none;
+}
+a.text-link:visited {
+    color:#F24C00
+}
+a:visited {
+    color: #f0f0f0
+}
+ 
+p {
+    text-align: center;
+    font-size: 12px;
+}
+
+img {
+    border: 1px;
+    border-color: #533747;
+}
+
+.card {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-shrink:10;
+    height: 9rem;
+    width: 8rem;
+    border-radius: 1rem;
+    padding: 1rem 1rem 1rem 1rem;
+    margin: 1rem 1rem 1rem 1rem;
+    background-color: #6EB4D1 
+}
+
+.card.card-logos {
+    flex-direction: row;
+}
+
+.tiny-card {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-shrink:10;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 1rem;
+    padding: 1rem 1rem 1rem 1rem;
+    margin: 1rem 1rem 1rem 1rem;
+    
+}
+
+/* @media (prefers-color-scheme: dark) {
+    .tiny-card {
+ 
+        background-color: #FEFEFE ; 
+    }
+} */
+
+@media (prefers-color-scheme: light) {
+    .tiny-card {
+        background-color: #C3C2C1;  
+    }
+}
+
+div.tiny-card {
+    font-size: 9px;
+}
+div.contact {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+@media (prefers-color-scheme: dark) {
+    div.contact-item {
+        /* 0B3C49 */
+        /* background-color: #FEFEFE ;  */
+        border-radius:1px;
+    }
+}
