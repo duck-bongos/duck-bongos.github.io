@@ -6,6 +6,18 @@ Caroline Blue: 6EB4D1
 Sunset: F9C784
 Golden Gate Bridge: F24C00 
 */
+
+/* Other colors
+Pewter: 
+Cerulean: 
+Vermilion: 
+Celadon: 
+Fuschia: 
+Saffron: 
+Cinnabar: 
+Viridian:  
+
+*/
 html {
     min-height:auto;
     margin: 50px;
@@ -61,7 +73,7 @@ div.flex-container {
 
 
 a.text-link {
-    color: #F24C00
+    color: #F9C22E
 }
 a.text-link-career {
     color: #CCDBDC;
@@ -78,7 +90,7 @@ a {
     text-decoration: none;
 }
 a.text-link:visited {
-    color:#F24C00
+    color:#F9C22E
 }
 a:visited {
     color: #f0f0f0
