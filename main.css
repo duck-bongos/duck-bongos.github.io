@@ -48,6 +48,11 @@ div.main-container {
   max-width: 100%;
 }
 
+section {
+    padding-top: 2%;
+    margin-top: 2%;
+}
+
 div.container p {
   text-align: left;
   text-indent: 50px;
@@ -65,12 +70,21 @@ div.role-header h4 {
   padding-right: 2%;
 }
 
+div.role-body {
+    padding-bottom: 2%;
+    margin-bottom: 2%;
+}
+
+
 h3.company-name,
 h4.job-title,
 h4.company-daterange,
 h5.job-daterange {
   margin-block-start: 0.1rem;
   margin-block-end: 0.2rem;
+}
+h4.job-title {
+    font-style: italic;
 }
 
 div.role-body {
