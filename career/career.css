@@ -1,23 +1,17 @@
 body {
-
-        font-family: "Barlow", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: 400;
-        font-style: normal;
-        }
-
-h1 {
-    font-family: monospace;
-    font-weight: 900;
-    font-style: normal;
-
+  font-family: "Barlow", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
+
+
 
 div.main-container {
   display: flex;
   text-align: center;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 20%;
+  padding-right: 20%;
   max-width: 60%;
 }
 
@@ -39,21 +33,21 @@ h3.daterange,
 h4.daterange,
 h5.daterange,
 div.role-body {
-    margin-left: .5em;
-    margin-block-start: 0.3em;
-    margin-block-end: 0.3em;
+  margin-left: 0.5em;
+  margin-block-start: 0.3em;
+  margin-block-end: 0.3em;
 }
 
 .daterange {
-    font-family: "Barlow", sans-serif;
-    font-weight: 300;
-    font-style: italic;
+  font-family: "Barlow", sans-serif;
+  font-weight: 300;
+  font-style: italic;
 }
 
 h5 {
-    font-family: "Barlow", sans-serif;
-    font-weight: 300;
-    font-style: italic;
+  font-family: "Barlow", sans-serif;
+  font-weight: 300;
+  font-style: italic;
 }
 
 h3.daterange,
@@ -79,9 +73,9 @@ div.role-body {
   margin-block-end: 0.755em;
 }
 @media (max-width: 800px) {
-    .main-container {
+  .main-container {
     padding: 4%;
-}
+  }
   div.company-header h2,
   div.company-header h3,
   div.job-title h4,
@@ -100,4 +94,3 @@ div.role-body {
     margin-block-start: 0.1em;
   }
 }
-
