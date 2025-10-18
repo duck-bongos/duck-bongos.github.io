@@ -217,11 +217,6 @@ div.contact {
   }
 }
 
-/*NAVBAR TUTORIAL*/
-/* h2, p {
-  margin: 10px;
-} */
-
 ul {
   background-color: var(--secondary-color);
   margin-block-start: 0;
@@ -236,6 +231,13 @@ ul {
 ul li {
   float: left;
 }
+
+/* @media (max-width: 800px) {
+    ul li {
+        float: center;
+    }
+} */
+
 
 ul li a {
   display: block;
