@@ -27,9 +27,6 @@ Exploring alternative solutions is worth at least a few hours, especially when y
 
 On balance, I think their MLFlow integration is top notch and their data availability is incredibly strong. 
 
-### <img src="{{ site.baseurl }}/assets/work_logos/videa.png" style="float: left; width:50px; height:50px; display: block; margin-right:10px " > Videa Health
-**(Summer 2022)** Interning again! My seventh internship experience. Seven. I spent two and one-third years as an intern. Give me a job already! Goodness.
-
 ### <img src="{{ site.baseurl }}/assets/work_logos/sbu.jpg" style="float: left; width:50px; height:50px; display: block; margin-right:10px " > School's In
 **(Aug 2021 - May 2023)** I went back to graduate school and had a very tough time. I was a graduate assistant for an undergraduate data science class, so technically I worked here! I was also a √irtual code coach for kids. Doing all that was not easy.
 

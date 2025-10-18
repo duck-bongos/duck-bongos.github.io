@@ -9,26 +9,35 @@ Caroline Blue: 6EB4D1
 Sunset: F9C784
 Golden Gate Bridge: F24C00 
 */
+@media (prefers-color-scheme: dark) {
+  :root {
+    /*Hue: 153.6*/
+    --primary-color: hsl(157, 72%, 39%);
+    --secondary-color: hsl(157, 97%, 13%);
+    --tertiary-color: hsl(157, 91%, 88%);
+    --quadranary-color: hsl(157, 91%, 22%);
+    --text-primary: hsl(150, 65%, 93%);
+    /* hsl(157, 91%, 22%); */
+    --hyperlink-color: var(--secondary-color);
+    --primary-accent: #d9a108;
+  }
+}
+@media (prefers-color-scheme: light) {
+  /*Hue: 197.6*/
+  :root {
+    --primary-color: #55abce;
+    --secondary-color: #04394f;
+    --tertiary-color: #a8ddf3;
+    --text-primary: #0f0f0f;
+    --hyperlink-color: #bf97f5;
+    --primary-accent: #d9a108;
+  }
+}
 
-/* Other colors
-[ coooler / HTMLPicker ]
-
-Pewter: / 899499
-Cerulean: 2C6F8C /
-Vermilion: FF3C38
-Celadon: / #AFE1AF
-Fuschia: / #FF00FF
-Saffron: F9C22E  / F4C430
-Cinnabar: #E34234
-Viridian:  #40826D
-
-
-
-*/
-:root {
-  --primary-color: #007bff;
-  --secondary-color: #6c757d;
-  --tertiary-color: rgba(255, 25, 255, 50);
+html,
+body {
+  background-color: var(--primary-color);
+  color: var(--text-primary);
 }
 
 html {
@@ -44,56 +53,34 @@ body {
 div.main-container {
   display: flex;
   text-align: center;
-  padding: 20px;
-  max-width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+  max-width: 80%;
+}
+/* 
+@media (min-width: 1560px) {
+    .main-container{
+        padding-left: 10%;
+        padding-right: 10%;
+    } 
 }
 
+
+@media (min-width: 1024px) {
+    .main-container{
+        padding-left: 8%;
+        padding-right: 8%;
+    } 
+} */
+
 section {
-    padding-top: 2%;
-    margin-top: 2%;
+  padding-top: 2%;
+  margin-top: 2%;
 }
 
 div.container p {
   text-align: left;
-  text-indent: 50px;
-}
-
-div.company-header,
-div.role-header {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-div.role-header h4 {
-  padding-left: 2%;
-  padding-right: 2%;
-}
-
-div.role-body {
-    padding-bottom: 2%;
-    margin-bottom: 2%;
-}
-
-
-h3.company-name,
-h4.job-title,
-h4.company-daterange,
-h5.job-daterange {
-  margin-block-start: 0.1rem;
-  margin-block-end: 0.2rem;
-}
-h4.job-title {
-    font-style: italic;
-}
-
-div.role-body {
-    text-align: left;
-    padding-left: 2%;
-    padding-right: 2%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  text-indent: 2rem;
 }
 
 h3.section-heading {
@@ -104,28 +91,28 @@ h3.section-heading {
   align-content: center;
 }
 
-@media (prefers-color-scheme: dark) {
-  html body {
-    background-color: var(--primary-color) /* Dark background */;
-    color: #f0f0f0; /* Light text */
-  }
+div.logo-label {
+  display: flex;
+  align-items: center;
+}
+div.logo-label h3,
+div.logo-label svg {
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
-@media (prefers-color-scheme: light) {
-  html body {
-    background-color: #e5e4e2;
-  }
-}
+
 
 h1 {
   text-align: center;
+}
+h2, h3, h4, h5 {
+    display: flex;
 }
 
 div.projects {
   justify-content: center;
   display: flex;
-  /* justify-content: center; */
-  /* margin: auto; */
 }
 
 div.flex-container {
@@ -136,26 +123,27 @@ div.flex-container {
 
 a {
   /* color: #F9C784; */
-  color: #f0f0f0;
+  color: var(--hyperlink-color);
   text-decoration: none;
 }
+
 a.text-link {
-  color: #fc440f;
+  color: var(--hyperlink-color);
   text-decoration: underline;
 }
 a.text-link-career {
-  color: #ccdbdc;
+  color: var(--hyperlink-color);
   text-decoration: underline;
 }
 a.text-link-career:visited {
-  color: #ff3c38;
+  color: var(--hyperlink-color);
 }
 
 a.text-link:visited {
-  color: #f9c22e;
+  color: var(--hyperlink-color);
 }
 a:visited {
-  color: #f0f0f0;
+  color: var(--hyperlink-color);
 }
 
 p {
@@ -178,7 +166,12 @@ img {
   border-radius: 1rem;
   padding: 1rem 1rem 1rem 1rem;
   margin: 1rem 1rem 1rem 1rem;
-  background-color: #6eb4d1;
+  background-color: var(--quadranary-color);
+}
+a.card p {
+  text-indent: 0px;
+  text-align: center;
+  color: var(--text-primary);
 }
 
 .card.card-logos {
@@ -230,20 +223,14 @@ div.contact {
 } */
 
 ul {
-  background-color: #d9a108;
+  background-color: var(--secondary-color);
   margin-block-start: 0;
   list-style-type: none;
   min-width: 100%;
   padding: 0;
   overflow: hidden;
-  color: black;
   border-color: black;
   align-items: center;
-}
-
-ul.career-toc {
-  color: white;
-  background-color: var(--primary-color);
 }
 
 ul li {
@@ -252,10 +239,14 @@ ul li {
 
 ul li a {
   display: block;
-  color: black;
+  color: var(--text-primary);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+}
+
+ul.navbar a {
+  color: var(--text-primary);
 }
 
 ul li a:hover {
@@ -269,6 +260,6 @@ ul li a.selected {
 }
 
 ul li a.visited {
-  background-color: #d9a108;
+  background-color: var(--text-primary);
   color: black;
 }
