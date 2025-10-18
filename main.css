@@ -47,6 +47,9 @@ html {
 body {
   font-size: 18px;
   font-family: monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
   margin: 0;
 }
 
@@ -83,7 +86,7 @@ div.container p {
   text-indent: 2rem;
 }
 
-h3.section-heading {
+h2.section-heading {
   display: flex;
   font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -101,13 +104,14 @@ div.logo-label svg {
   margin-right: 10px;
 }
 
-
-
 h1 {
   text-align: center;
 }
-h2, h3, h4, h5 {
-    display: flex;
+h2,
+h3,
+h4,
+h5 {
+  display: flex;
 }
 
 div.projects {
@@ -161,7 +165,7 @@ img {
   display: flex;
   flex-direction: column;
   flex-shrink: 10;
-  height: 12rem;
+  /* height: 12rem; */
   width: 11rem;
   border-radius: 1rem;
   padding: 1rem 1rem 1rem 1rem;
@@ -237,7 +241,6 @@ ul li {
         float: center;
     }
 } */
-
 
 ul li a {
   display: block;
