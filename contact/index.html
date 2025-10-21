@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dan Billmann</title>
     <link rel="stylesheet" href="../main.css" />
+    <link rel="stylesheet" href="contact.css" />
+
     <script type="text/javascript" src="https://livejs.com/live.js"></script>
   </head>
   <body>
@@ -20,9 +22,29 @@
       </div>
     </div>
     <div class="main-container">
-      <h1 id="typewriter-contact"></h1>
+      <div class="container">
+        <h1 id="typewriter-contact"></h1>
+
+        <div class="content-container"></div>
+      </div>
     </div>
     <script>
+      function toggle_tech() {
+        var one = document.getElementById("div1");
+        var two = document.getElementById("div2");
+        var button = document.getElementById("thing");
+
+        if (one.style.display === "none") {
+          one.style.display = "inline-block";
+          two.style.display = "none";
+          thing.textContent = "Techology Used";
+        } else {
+          one.style.display = "none";
+          two.style.display = "inline-block";
+          thing.textContent = "Accomplishments";
+        }
+      }
+
       let typingSpeed = 70;
       let contactIndex = 0;
       const contactElement = document.getElementById("typewriter-contact");

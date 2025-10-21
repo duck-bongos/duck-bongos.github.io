@@ -1,11 +1,35 @@
+@media (prefers-color-scheme: dark) {
+  :root {
+    /*Hue: 153.6*/
+    --primary-color: hsl(157, 72%, 39%);
+    --secondary-color: hsl(157, 97%, 13%);
+    --tertiary-color: hsl(157, 91%, 88%);
+    --quadranary-color: hsl(157, 91%, 22%);
+    --text-primary: hsl(150, 65%, 93%);
+    /* hsl(157, 91%, 22%); */
+    --hyperlink-color: var(--secondary-color);
+    --primary-accent: #d9a108;
+  }
+}
+@media (prefers-color-scheme: light) {
+  /*Hue: 197.6*/
+  :root {
+    --primary-color: #55abce;
+    --secondary-color: #04394f;
+    --tertiary-color: #a8ddf3;
+    --text-primary: #0f0f0f;
+    --text-secondary: #1e1e1e;
+    --hyperlink-color: #bf97f5;
+    --primary-accent: #d9a108;
+  }
+}
+
 body {
   font-family: "Barlow", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
-
-
 
 div.main-container {
   display: flex;
@@ -33,7 +57,6 @@ h3.daterange,
 h4.daterange,
 h5.daterange,
 div.role-body {
-  margin-left: 0.5em;
   margin-block-start: 0.3em;
   margin-block-end: 0.3em;
 }
@@ -93,4 +116,17 @@ div.role-body {
   h5.daterange {
     margin-block-start: 0.1em;
   }
+}
+
+button h4 {
+  color: black;
+}
+
+ul.career-item {
+  list-style-type: circle;
+}
+
+ul.career-item li {
+  margin: 10px;
+  list-style-type: circle;
 }

@@ -29,6 +29,7 @@ Golden Gate Bridge: F24C00
     --secondary-color: #04394f;
     --tertiary-color: #a8ddf3;
     --text-primary: #0f0f0f;
+    --text-secondary: #1e1e1e;
     --hyperlink-color: #bf97f5;
     --primary-accent: #d9a108;
   }
@@ -98,8 +99,11 @@ div.logo-label {
   align-items: center;
 }
 div.logo-label h3,
-div.logo-label svg {
-  margin-left: 10px;
+div.logo-label {
+  /* margin-left: 10px; */
+  margin-right: 10px;
+}
+svg {
   margin-right: 10px;
 }
 
@@ -112,6 +116,7 @@ h1 {
 h2,
 h3,
 h4,
+button h4,
 h5 {
   display: flex;
 }
@@ -303,4 +308,16 @@ ul li a.selected {
 ul li a.visited {
   background-color: var(--text-primary);
   color: black;
+}
+
+
+button {
+  width: 100%;
+  padding-inline: 3px;
+  
+  background-color: var(--tertiary-color);
+  /* color: var(--text-primary); */
+  color: var(--text-secondary);
+  border-radius: 1px;
+  border-color: var(--secondary-color)
 }

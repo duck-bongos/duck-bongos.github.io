@@ -34,77 +34,7 @@
     <div class="main-container">
       <div class="container">
         <h1 id="typewriter-career"></h1>
-
-        <!-- Technology Logos -->
-        <!-- <div class="flex-container">
-          <a href="https://www.python.org/" target="_blank">
-            <div class="tiny-card">
-              <img
-                src="https://s3.dualstack.us-east-2.amazonaws.com/pythondotorg-assets/media/files/python-logo-only.svg"
-                alt=""
-                height="40rem"
-                width="40rem"
-              />
-            </div>
-          </a>
-          <div class="tiny-card">
-            <img
-              src="https://raw.githubusercontent.com/numpy/numpy/fe051faefefbb519e31fef7943a63b1abef5e836/branding/logo/logomark/numpylogoicon.svg"
-              alt=""
-              height="60rem"
-              width="60rem"
-            />
-          </div>
-          <div class="tiny-card">
-            <img
-              src="https://pandas.pydata.org/static/img/pandas_mark_white.svg"
-              alt=""
-              height="60rem"
-              width="60rem"
-            />
-          </div>
-          <div class="tiny-card">
-            <img
-              src="https://icon.icepanel.io/Technology/svg/Matplotlib.svg"
-              alt=""
-              height="60rem"
-              width="60rem"
-            />
-          </div>
-          <div class="tiny-card">
-            <img
-              src="https://spark.apache.org/images/spark-logo-rev.svg"
-              alt=""
-              height="60rem"
-              width="60rem"
-            />
-          </div>
-          <div class="tiny-card">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/PyTorch_logo_icon.svg/1694px-PyTorch_logo_icon.svg.png"
-              alt=""
-              height="60rem"
-              width="60rem"
-            />
-          </div>
-          <div class="tiny-card">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Tensorflow_logo.svg"
-              alt=""
-              height="60rem"
-              width="60rem"
-            />
-          </div>
-          <div class="tiny-card">
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRk55thBB29oWmkALZ9-rQUxrJw5tBp51KNw&s"
-              alt=""
-              height="60rem"
-              width="60rem"
-            />
-          </div>
-        </div> -->
-
+        <h3 style="font-style: italic;">Please click any role headers to toggle between accomplishments and technology stack.</h3>
         <section id="post-masters">
           <div class="company">
             <div class="company-header">
@@ -148,12 +78,37 @@
             </div>
             <div class="roles">
               <div class="role">
-                <div class="role-header">
-                  <h4 class="job-title">Sr. Machine Learning Engineer</h4>
-                  <h4 class="daterange">Sept 2025 - Present</h4>
-                </div>
+                <div class="role-body">
+                  <div class="content-container">
+                    <button
+                      id="thing"
+                      class="toggle-info"
+                      onclick="toggle_tech()"
+                    >
+                      <div class="role-header">
+                        <h4 class="job-title">Sr. Machine Learning Engineer</h4>
+                        <h4 class="daterange">Sept 2025 - Present</h4>
+                      </div>
+                    </button>
+                    <div id="div1" class="toggle-div">
+                      <ul class="career-item">
+                        
+                        <li>Rebuilt Machine Learning Pipeline with PySpark, Databricks and MLFlow to improve runtime.</li>
+                        <li>Designed an algorithm to reassign patient tiers that improved operational cost efficiency by 20%.</li>
+                      </ul>
+                    </div>
+                    <div id="div2" class="toggle-div" style="display: none">
+                      <div style="margin: 5px;">
 
-                <div class="role-body">I did one Machine Learning thing.</div>
+                        <img
+                        src="https://s3.dualstack.us-east-2.amazonaws.com/pythondotorg-assets/media/files/python-logo-only.svg"
+                        height="60rem"
+                        width="60rem"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="role-header">
                 <h4 class="job-title">Machine Learning Engineer</h4>
@@ -424,6 +379,19 @@
       </div>
     </div>
     <script>
+      function toggle_tech() {
+        var one = document.getElementById("div1");
+        var two = document.getElementById("div2");
+        var button = document.getElementById("thing");
+
+        if (one.style.display === "none") {
+          one.style.display = "inline-block";
+          two.style.display = "none";
+        } else {
+          one.style.display = "none";
+          two.style.display = "inline-block";
+        }
+      }
       let typingSpeed = 70;
       let careerIndex = 0;
       const careerElement = document.getElementById("typewriter-career");

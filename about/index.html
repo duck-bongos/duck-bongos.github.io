@@ -20,12 +20,14 @@
       </div>
     </div>
     <div class="main-container">
-      <h1 id="typewriter-about"></h1>
+      <div class="container">
+        <h1 id="typewriter-text"></h1>
+      </div>
     </div>
     <script>
       let typingSpeed = 70;
       let aboutIndex = 0;
-      const careerElement = document.getElementById("typewriter-about");
+      const careerElement = document.getElementById("typewriter-text");
       const careerText = "About Me";
       function aboutWriter() {
         if (aboutIndex < careerText.length) {
