@@ -119,14 +119,27 @@ div.role-body {
 }
 
 button h4 {
-  color: black;
+  color: hsl(157, 97%, 13%);
 }
 
 ul.career-item {
   list-style-type: circle;
+  border-radius: 25px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  
 }
 
 ul.career-item li {
   margin: 10px;
   list-style-type: circle;
+}
+.card {
+width: 60rem;  
+}
+
+button {
+  padding: 8px;
+  border-radius: 25px;
+  border-style: dashed;
 }
