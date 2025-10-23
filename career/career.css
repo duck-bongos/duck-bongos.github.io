@@ -228,7 +228,6 @@ div.tech-stack div {
 }
 h4.tech-stack-label {
   display: block;
-  color:#04394f;
-  /* margin-block-start: 12px; */
+  color: var(--secondary-color);
   margin-block-end: 12px;
 }
