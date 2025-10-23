@@ -6,9 +6,11 @@
     --tertiary-color: hsl(157, 91%, 88%);
     --quadranary-color: hsl(157, 91%, 22%);
     --text-primary: hsl(150, 65%, 93%);
+    --text-secondary: hsl(150, 15%, 3%);
     /* hsl(157, 91%, 22%); */
     --hyperlink-color: var(--secondary-color);
     --primary-accent: #d9a108;
+    --opaque-background-light: hsla(157, 88%, 85%, 0.5)
   }
 }
 @media (prefers-color-scheme: light) {
@@ -88,6 +90,8 @@ h4.degree {
 
 div.role {
   display: block;
+  text-align: left;
+  margin-block-end: 0.755em;
 }
 
 div.role-body {
@@ -95,6 +99,7 @@ div.role-body {
   text-align: left;
   margin-block-end: 0.755em;
 }
+
 @media (max-width: 800px) {
   .main-container {
     padding: 4%;
@@ -127,7 +132,6 @@ ul.career-item {
   border-radius: 25px;
   margin-top: 10px;
   margin-bottom: 10px;
-  
 }
 
 ul.career-item li {
@@ -135,11 +139,96 @@ ul.career-item li {
   list-style-type: circle;
 }
 .card {
-width: 60rem;  
+  width: 60rem;
 }
 
 button {
   padding: 8px;
   border-radius: 25px;
   border-style: dashed;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.popup {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.tech-stack {
+  justify-content: space-between;
+  border-radius: 25px;
+  padding: 5px;
+  margin: 5px;
+  background-color: hsl(150, 65%, 93%);
+}
+
+.popup .tech-stack {
+  visibility: hidden;
+  background-color: var(--tertiary-color);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  top: -29%;
+  display: inline-block;
+}
+
+.popup .tech-stack::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: var(--tertiary-color) transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+  background-color: var(--tertiary-color);
+  border-radius: 25px;
+}
+
+div.tech-stack div {
+  display: block;
+}
+h4.tech-stack-label {
+  display: block;
+  color:#04394f;
+  /* margin-block-start: 12px; */
+  margin-block-end: 12px;
 }

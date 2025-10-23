@@ -1,49 +1,50 @@
-.collapsible {
-  background-color: #777;
-  color: white;
+.popup {
+  position: relative;
+  display: inline-block;
   cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
-.active, .collapsible:hover {
+/* The actual popup */
+.popup .tech-stack {
+  visibility: hidden;
+  width: 160px;
   background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  top: 125%;
+  left: 150%;
+  margin-left: -80px;
 }
 
-.collapsible:after {
-  content: '\002B';
-  color: white;
-  font-weight: bold;
-  float: right;
-  margin-left: 5px;
+/* Popup arrow */
+.popup .tech-stack::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
 }
 
-.active:after {
-  content: "\2212";
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
 }
-
-.content {
-  padding: 0 18px;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  background-color: #f1f1f1;
-}
-
 
 div.content-container {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
-}
-
-button {
-    background-color: goldenrod;
-    padding: 19px;
-    border: none;
     width: 100%;
 }
