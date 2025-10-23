@@ -1,6 +1,7 @@
 /* optional theme control */
 :root {
   --hue: 59;
+  --text-hue: 60;
   --icon-fill-1: hsl(var(--hue), 40%, 80%);
   --icon-fill-2: hsl(var(--hue), 40%, 60%);
   font-family: "Barlow";
