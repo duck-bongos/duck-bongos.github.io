@@ -1,31 +1,3 @@
-@media (prefers-color-scheme: dark) {
-  :root {
-    /*Hue: 153.6*/
-    --primary-color: hsl(157, 72%, 39%);
-    --secondary-color: hsl(157, 97%, 13%);
-    --tertiary-color: hsl(157, 91%, 88%);
-    --quadranary-color: hsl(157, 91%, 22%);
-    --text-primary: hsl(150, 65%, 93%);
-    --text-secondary: hsl(150, 15%, 3%);
-    /* hsl(157, 91%, 22%); */
-    --hyperlink-color: var(--secondary-color);
-    --primary-accent: #d9a108;
-    --opaque-background-light: hsla(157, 88%, 85%, 0.5)
-  }
-}
-@media (prefers-color-scheme: light) {
-  /*Hue: 197.6*/
-  :root {
-    --primary-color: #55abce;
-    --secondary-color: #04394f;
-    --tertiary-color: #a8ddf3;
-    --text-primary: #0f0f0f;
-    --text-secondary: #1e1e1e;
-    --hyperlink-color: #bf97f5;
-    --primary-accent: #d9a108;
-  }
-}
-
 body {
   font-family: "Barlow", sans-serif;
   font-optical-sizing: auto;
@@ -219,7 +191,7 @@ button {
   visibility: visible;
   -webkit-animation: fadeIn 1s;
   animation: fadeIn 1s;
-  background-color: var(--tertiary-color);
+  background-color: var(--opaque-background-light);
   border-radius: 25px;
 }
 
@@ -228,6 +200,6 @@ div.tech-stack div {
 }
 h4.tech-stack-label {
   display: block;
-  color: var(--secondary-color);
-  margin-block-end: 12px;
+  color:var(--secondary-text);
+  margin-block-start: 0;
 }

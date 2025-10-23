@@ -1,3 +1,11 @@
+/* optional theme control */
+:root {
+  --hue: 59;
+  --icon-fill-1: hsl(var(--hue), 40%, 80%);
+  --icon-fill-2: hsl(var(--hue), 40%, 60%);
+  font-family: "Barlow";
+}
+
 .popup {
   position: relative;
   display: inline-block;
@@ -44,7 +52,22 @@
 }
 
 div.content-container {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
 }
+
+
+
+
+path.cls-1 {
+  fill: var(--icon-fill-1, #ff0000);
+  fill-rule: evenodd;
+}
+
+path.cls-2 {
+  fill: var(--icon-fill-2, #00ff00);
+  fill-rule: evenodd;
+}
+
+

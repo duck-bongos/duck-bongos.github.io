@@ -1,37 +1,38 @@
-/* current palette Oct 17 2025 
-https://coolors.co/14313e-d9a108-ffffff-2c6f8c-fc440f
-*/
-/* 
-Titanium: E5E4E2
-Eggplant: 533747
-Midnight Green: 0B3C49
-Caroline Blue: 6EB4D1
-Sunset: F9C784
-Golden Gate Bridge: F24C00 
-*/
 @media (prefers-color-scheme: dark) {
   :root {
-    /*Hue: 153.6*/
-    --primary-color: hsl(157, 72%, 39%);
-    --secondary-color: hsl(157, 97%, 13%);
-    --tertiary-color: hsl(157, 91%, 88%);
-    --quadranary-color: hsl(157, 91%, 22%);
-    --text-primary: hsl(150, 65%, 93%);
-    /* hsl(157, 91%, 22%); */
-    --hyperlink-color: var(--secondary-color);
-    --primary-accent: #d9a108;
+    --hue: 179;
+    --text-hue: 60;
+    --primary-color: hsl(var(--hue), 50%, 50%);
+    --secondary-color: hsl(var(--hue), 63%, 33%);
+    --tertiary-color: hsl(var(--hue), 33%, 33%);
+    --text-primary: hsl(var(--text-hue), 90%, 90%);
+    --text-secondary: hsl(var(--text-hue), 90%, 90%);
+    --primary-accent: #ff5e5b;
+    --quadranary-color: hsl(var(--hue), 100%, 33%);
+    --opaque-background-light: hsla(var(--hue), 50%, 80%, 0.99);
+    --hyperlink-color: var(--tertiary-color);
   }
 }
 @media (prefers-color-scheme: light) {
   /*Hue: 197.6*/
   :root {
-    --primary-color: #55abce;
-    --secondary-color: #04394f;
-    --tertiary-color: #a8ddf3;
-    --text-primary: #0f0f0f;
+    --hue: 189;
+    /* --primary-color: #55abce; */
+    --primary-color: hsl(var(--hue), 7%, 93%);
+    /* --secondary-color: #04394f; */
+    --secondary-color: hsl(var(--hue), 45%, 54%);
+    /* --tertiary-color: #a8ddf3; */
+    --tertiary-color: hsl(var(--hue), 11%, 93%);
+    /* --text-primary: #fafaf0; */
+    --text-primary: hsl(var(--hue), 13%, 13%);
+    /* --text-secondary: #071c2e; */
     --text-secondary: #1e1e1e;
-    --hyperlink-color: #bf97f5;
-    --primary-accent: #d9a108;
+    --quadranary-color: hsl(179, 75%, 80%);
+
+    --primary-accent: hsl(179, 100%, 33%);
+    --opaque-background-light: hsla(179, 80%, 70%, 0.9);
+    /* --hyperlink-color: #bf97f5; */
+    --hyperlink-color: var(--primary-accent);
   }
 }
 
@@ -177,7 +178,7 @@ img {
   border-radius: 1rem;
   padding: 1rem 1rem 1rem 1rem;
   margin: 1rem 1rem 1rem 1rem;
-  background-color: var(--quadranary-color);
+  background-color: var(--secondary-color);
 }
 a.card p {
   text-indent: 0px;
@@ -245,15 +246,9 @@ ul li {
 }
 
 ul.navbar {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
-
-/* @media (max-width: 800px) {
-    ul li {
-        float: center;
-    }
-} */
 
 ul li a {
   display: block;
@@ -310,14 +305,13 @@ ul li a.visited {
   color: black;
 }
 
-
-button {
+/* button {
   width: 100%;
   padding-inline: 3px;
   
   background-color: var(--tertiary-color);
-  /* color: var(--text-primary); */
+  color: var(--text-primary);
   color: var(--text-primary);
   border-radius: 1px;
   border-color: var(--secondary-color)
-}
+} */

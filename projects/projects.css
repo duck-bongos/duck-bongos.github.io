@@ -1,0 +1,10 @@
+@media (prefers-color-scheme: dark) {
+    :root {--hue: 208;}
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --hue: 208;
+  }
+}
+
