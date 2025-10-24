@@ -1,67 +1,53 @@
+:root {
+  --text-base: hsl(243, 76%, 5%);
+  --background-base: hsl(192, 100%, 99%);
+  --primary-base: hsl(189, 96%, 52%);
+  --secondary-base: hsl(51, 90%, 72%);
+  --accent-base: hsl(243, 78%, 63%);
+}
 @media (prefers-color-scheme: dark) {
   :root {
-    --primary-hue: 189;
-    --secondary-hue: calc(var(--primary-hue) + 125);
-    --tertiary-hue: calc(var(--primary-hue) - 125);
-    --text-hue: 189;
+      --text: hsl(from var(--text-base) h s calc(100 - l));
+      --background: hsl(from var(--background-base) h s calc(100 - l));
+      --primary: hsl(from var(--primary-base) h s calc(100 - l));
+      --secondary: hsl(334, 96%, 64%);
+      --accent: hsl(50, 100%, 73%);
 
-    /* Turquoise ish */
-    /* --primary-dark: hsl(var(--hue), 97%, 4%); */
-    --primary-dark: hsl(calc(var(--primary-hue) - 27), 85%, 20%);
-    --primary-color: hsl(var(--primary-hue), 63%, 47%);
-    --primary-light: hsl(calc(var(--primary-hue) - 14), 71%,54%);
-    --primary-opaque-light: hsla(calc(var(--primary-hue) - 14), 80%, 80%, 95%);
+      --primary-dark: hsl(from var(--primary) h s calc(l - 20));
+      --primary-light: hsl(from var(--primary) h s calc(l + 20));
+      --primary-light: hsl(from var(--primary) h calc(s / 2) calc(l + 20));
 
-    /*Pink Ish*/
-    --secondary-dark: hsl(calc(var(--secondary-hue) - 27), 85%, 20%);
-    --secondary-color: hsl(var(--secondary-hue), 63%, 47%);
-    --secondary-light: hsl(calc(var(--secondary-hue) - 14), 95%, 64%);
+      --secondary-dark: hsl(from var(--secondary) h s calc(l - 10));
+      --secondary-light: hsl(from var(--secondary) h s calc(l + 10));
 
-    /*Yellow Ish*/
-    --tertiary-dark: hsl(calc(var(--tertiary-hue) - 27), 85%, 20%);
-    --tertiary-color: hsl(var(--tertiary-hue), 63%, 47%);
-    --tertiary-light: hsl(calc(var(--tertiary-hue) - 17), 71%, 32%);
-
-    /* --primary-light: hsl(calc(var(--hue)*1.118), 80%, 25%); */
-    --text-primary: hsl(calc(var(--text-hue)*.75), 86%, 99%);
-    --text-secondary: hsl(calc(var(--text-hue)*1.24), 97%, 7%);
-    
-    --primary-accent: var(--secondary-light);
-    --opaque-background-light: hsla(var(--hue), 50%, 80%, 0.99);
-
-    --hyperlink-text: var(--secondary-light);
-    /* --hyperlink-text: hsl(abs(var(--hue) + 120), 50%, 23%) */
+      --accent-dark: hsl(from var(--accent) h s calc(l - 20));
+      --accent-light: hsl(from var(--accent) h s calc(l + 20));
   }
 }
-
 @media (prefers-color-scheme: light) {
-  /*Hue: 197.6*/
   :root {
-    --hue: 179;
-    --text-hue: 60;
-    /* --primary-color: #55abce; */
-    --primary-color: hsl(var(--hue), 97%, 97%);
-    /* --secondary-color: #04394f; */
-    --secondary-color: hsl(var(--hue), 97%, 83%);
-    /* --primary-light: #a8ddf3; */
-    --primary-light: hsl(var(--hue), 20%, 23%);
-    /* --text-primary: #fafaf0; */
-    --text-primary: hsl(var(--hue), 23%, 23%);
-    /* --text-secondary: #071c2e; */
-    --text-secondary: hsl(var(--hue), 73%, 83%);
-    --quadranary-color: hsl(179, 75%, 80%);
+    --text: var(--text-base);
+    --background: var(--background-base);
+    --primary: var(--primary-base);
+    --secondary: var(--secondary-base);
+    --accent: var(--accent-base);
 
-    --primary-accent: hsl(53, 100%, 70%);
-    --opaque-background-light: hsla(179, 80%, 70%, 0.9);
-    /* --hyperlink-color: #bf97f5; */
-    --hyperlink-color: var(--primary-accent);
+    --primary-dark: hsl(from var(--primary) h s calc(l - 20));
+    --primary-light: hsl(from var(--primary) h s calc(l + 20));
+    /* --primary-light: hsl(from var(--primary) h calc(s / 2) calc(l + 20)); */
+
+    --secondary-dark: hsl(from var(--secondary) h s calc(l - 40));
+    --secondary-light: hsl(from var(--secondary) h s calc(l + 10));
+
+    --accent-dark: hsl(from var(--accent) h s calc(l - 20));
+    --accent-light: hsl(from var(--accent) h s calc(l + 20));
   }
 }
 
 html,
 body {
-  background-color: var(--primary-color);
-  color: var(--text-primary);
+  background-color: var(--background);
+  color: var(--text);
 }
 
 html {
@@ -135,6 +121,7 @@ h1 {
   font-family: monospace;
   font-weight: 900;
   font-style: normal;
+  background-color: var(--secondary);
 }
 h2,
 h3,
@@ -157,28 +144,28 @@ div.flex-container {
 
 a {
   /* color: #F9C784; */
-  color: var(--hyperlink-text);
+  color: var(--text);
   text-decoration: none;
 }
 
 a.text-link {
-  color: var(--hyperlink-text);
+  color: var(--secondary-dark);
   text-decoration: underline;
 }
 a.text-link-career {
-  color: var(--hyperlink-text);
+  color: var(--secondary-dark);
   text-decoration: underline;
 }
 a.text-link-career:visited {
-  color: var(--hyperlink-text);
+  color: var(--secondary-dark);
 }
 
 a.text-link:visited {
-  color: var(--hyperlink-text);
+  color: var(--secondary-dark);
 }
 
 a:visited {
-  color: var(--hyperlink-text);
+  color: var(--secondary);
 }
 
 p {
@@ -200,12 +187,12 @@ img {
   border-radius: 1rem;
   padding: 1rem 1rem 1rem 1rem;
   margin: 1rem 1rem 1rem 1rem;
-  background-color: var(--primary-light);
+  background-color: var(--primary);
 }
 a.card p {
   text-indent: 0px;
   text-align: center;
-  color: var(--text-primary);
+  color: var(--text);
 }
 
 .card.card-logos {
@@ -224,10 +211,9 @@ a.card p {
   margin: 1rem 1rem 1rem 1rem;
 }
 
-
 @media (prefers-color-scheme: light) {
   .tiny-card {
-    background-color: #c3c2c1;
+    background-color: var(--accent);
   }
 }
 
@@ -246,7 +232,7 @@ div.contact {
 }
 
 ul {
-  background-color: var(--primary-dark);
+  background-color: var(--primary);
   margin-block-start: 0;
   margin-block-end: 0;
   list-style-type: none;
@@ -268,21 +254,21 @@ ul.navbar {
 
 ul li a {
   display: block;
-  color: var(--text-primary);
+  color: var(--text);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
 div.navbar-container {
-  background-color: var(--primary-dark);
+  background-color: var(--primary);
   justify-content: center;
 }
 
 div.navbar {
   margin-top: 0;
   display: flex;
-  background-color: var(--primary-dark);
+  background-color: var(--primary);
   font-optical-sizing: auto;
   align-content: center;
   /* padding-left: 20%;
@@ -303,20 +289,21 @@ div.navbar ul {
 }
 
 ul.navbar a {
-  color: var(--text-primary);
+  color: var(--text);
 }
 
 ul li a:hover {
-  background-color: var(--primary-accent); /* #F9C22E; */
-  color: var(--text-primary);
+  background-color: var(--accent-light); /* #F9C22E; */
+  color: var(--secondary);
+  font-weight: 600;
 }
 
 ul li a.selected {
-  background-color: var(--primary-accent);
-  color: var(--text-primary);
+  background-color: var(--accent-light);
+  color: var(--primary);
 }
 
 ul li a.visited {
-  background-color: var(--primary-accent);
-  color: var(--text-primary);
+  background-color: var(--accent-light);
+  color: var(--primary);
 }

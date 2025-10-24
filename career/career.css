@@ -191,7 +191,8 @@ button {
   visibility: visible;
   -webkit-animation: fadeIn 1s;
   animation: fadeIn 1s;
-  background-color: var(--primary-opaque-light);
+  background-color: var(--primary-light);
+  color: var(--text);
   border-radius: 25px;
 }
 
