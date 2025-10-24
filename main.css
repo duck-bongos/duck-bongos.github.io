@@ -3,7 +3,7 @@
   --background-base: hsl(192, 100%, 99%);
   --primary-base: hsl(189, 96%, 52%);
   --secondary-base: hsl(51, 90%, 72%);
-  --accent-base: hsl(243, 78%, 63%);
+  --accent-base: hsl(291, 72%, 62%);
 }
 @media (prefers-color-scheme: dark) {
   :root {
@@ -293,7 +293,7 @@ ul.navbar a {
 }
 
 ul li a:hover {
-  background-color: var(--accent-light); /* #F9C22E; */
+  background-color: var(--accent); /* #F9C22E; */
   color: var(--secondary);
   font-weight: 600;
 }
