@@ -204,3 +204,14 @@ h4.tech-stack-label {
   color:var(--secondary-text);
   margin-block-start: 0;
 }
+
+@media (prefers-color-scheme: dark) {
+
+  
+}
+@media (prefers-color-scheme: light) {
+  
+  
+
+}
+
