@@ -1,18 +1,39 @@
 @media (prefers-color-scheme: dark) {
   :root {
-    --hue: 179;
-    --text-hue: 60;
-    --primary-color: hsl(var(--hue), 50%, 50%);
-    --secondary-color: hsl(var(--hue), 63%, 33%);
-    --tertiary-color: hsl(var(--hue), 33%, 33%);
-    --text-primary: hsl(var(--text-hue), 90%, 90%);
-    --text-secondary: hsl(var(--text-hue), 90%, 90%);
-    --primary-accent: hsl(abs(var(--text-hue) - 240), 100%, 70%);
-    --quadranary-color: hsl(var(--hue), 100%, 33%);
+    --primary-hue: 189;
+    --secondary-hue: calc(var(--primary-hue) + 125);
+    --tertiary-hue: calc(var(--primary-hue) - 125);
+    --text-hue: 189;
+
+    /* Turquoise ish */
+    /* --primary-dark: hsl(var(--hue), 97%, 4%); */
+    --primary-dark: hsl(calc(var(--primary-hue) - 27), 85%, 20%);
+    --primary-color: hsl(var(--primary-hue), 63%, 47%);
+    --primary-light: hsl(calc(var(--primary-hue) - 14), 71%,54%);
+    --primary-opaque-light: hsla(calc(var(--primary-hue) - 14), 80%, 80%, 95%);
+
+    /*Pink Ish*/
+    --secondary-dark: hsl(calc(var(--secondary-hue) - 27), 85%, 20%);
+    --secondary-color: hsl(var(--secondary-hue), 63%, 47%);
+    --secondary-light: hsl(calc(var(--secondary-hue) - 14), 95%, 64%);
+
+    /*Yellow Ish*/
+    --tertiary-dark: hsl(calc(var(--tertiary-hue) - 27), 85%, 20%);
+    --tertiary-color: hsl(var(--tertiary-hue), 63%, 47%);
+    --tertiary-light: hsl(calc(var(--tertiary-hue) - 17), 71%, 32%);
+
+    /* --primary-light: hsl(calc(var(--hue)*1.118), 80%, 25%); */
+    --text-primary: hsl(calc(var(--text-hue)*.75), 86%, 99%);
+    --text-secondary: hsl(calc(var(--text-hue)*1.24), 97%, 7%);
+    
+    --primary-accent: var(--secondary-light);
     --opaque-background-light: hsla(var(--hue), 50%, 80%, 0.99);
-    --hyperlink-color: var(--tertiary-color);
+
+    --hyperlink-text: var(--secondary-light);
+    /* --hyperlink-text: hsl(abs(var(--hue) + 120), 50%, 23%) */
   }
 }
+
 @media (prefers-color-scheme: light) {
   /*Hue: 197.6*/
   :root {
@@ -22,8 +43,8 @@
     --primary-color: hsl(var(--hue), 97%, 97%);
     /* --secondary-color: #04394f; */
     --secondary-color: hsl(var(--hue), 97%, 83%);
-    /* --tertiary-color: #a8ddf3; */
-    --tertiary-color: hsl(var(--hue), 20%, 23%);
+    /* --primary-light: #a8ddf3; */
+    --primary-light: hsl(var(--hue), 20%, 23%);
     /* --text-primary: #fafaf0; */
     --text-primary: hsl(var(--hue), 23%, 23%);
     /* --text-secondary: #071c2e; */
@@ -136,28 +157,28 @@ div.flex-container {
 
 a {
   /* color: #F9C784; */
-  color: var(--hyperlink-color);
+  color: var(--hyperlink-text);
   text-decoration: none;
 }
 
 a.text-link {
-  color: var(--hyperlink-color);
+  color: var(--hyperlink-text);
   text-decoration: underline;
 }
 a.text-link-career {
-  color: var(--hyperlink-color);
+  color: var(--hyperlink-text);
   text-decoration: underline;
 }
 a.text-link-career:visited {
-  color: var(--hyperlink-color);
+  color: var(--hyperlink-text);
 }
 
 a.text-link:visited {
-  color: var(--hyperlink-color);
+  color: var(--hyperlink-text);
 }
 
 a:visited {
-  color: var(--hyperlink-color);
+  color: var(--hyperlink-text);
 }
 
 p {
@@ -179,7 +200,7 @@ img {
   border-radius: 1rem;
   padding: 1rem 1rem 1rem 1rem;
   margin: 1rem 1rem 1rem 1rem;
-  background-color: var(--secondary-color);
+  background-color: var(--primary-light);
 }
 a.card p {
   text-indent: 0px;
@@ -203,12 +224,6 @@ a.card p {
   margin: 1rem 1rem 1rem 1rem;
 }
 
-/* @media (prefers-color-scheme: dark) {
-    .tiny-card {
- 
-        background-color: #FEFEFE ; 
-    }
-} */
 
 @media (prefers-color-scheme: light) {
   .tiny-card {
@@ -231,7 +246,7 @@ div.contact {
 }
 
 ul {
-  background-color: var(--secondary-color);
+  background-color: var(--primary-dark);
   margin-block-start: 0;
   margin-block-end: 0;
   list-style-type: none;
@@ -260,14 +275,14 @@ ul li a {
 }
 
 div.navbar-container {
-  background-color: var(--secondary-color);
+  background-color: var(--primary-dark);
   justify-content: center;
 }
 
 div.navbar {
   margin-top: 0;
   display: flex;
-  background-color: var(--secondary-color);
+  background-color: var(--primary-dark);
   font-optical-sizing: auto;
   align-content: center;
   /* padding-left: 20%;
@@ -305,14 +320,3 @@ ul li a.visited {
   background-color: var(--primary-accent);
   color: var(--text-primary);
 }
-
-/* button {
-  width: 100%;
-  padding-inline: 3px;
-  
-  background-color: var(--tertiary-color);
-  color: var(--text-primary);
-  color: var(--text-primary);
-  border-radius: 1px;
-  border-color: var(--secondary-color)
-} */

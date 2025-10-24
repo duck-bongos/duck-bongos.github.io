@@ -1,6 +1,39 @@
 @media (prefers-color-scheme: dark) {
-    :root {--hue: 208;}
+  :root {
+    --primary-hue: 280;
+    --secondary-hue: calc(var(--primary-hue) + 125);
+    --tertiary-hue: calc(var(--primary-hue) - 125);
+    --text-hue: 189;
+
+    /* Turquoise ish */
+    /* --primary-dark: hsl(var(--hue), 97%, 4%); */
+    --primary-dark: hsl(calc(var(--primary-hue) - 27), 85%, 20%);
+    --primary-color: hsl(var(--primary-hue), 63%, 47%);
+    --primary-light: hsl(calc(var(--primary-hue) - 14), 71%, 32%);
+
+    /*Pink Ish*/
+    --secondary-dark: hsl(calc(var(--secondary-hue) - 27), 85%, 20%);
+    --secondary-color: hsl(var(--secondary-hue), 63%, 47%);
+    --secondary-light: hsl(calc(var(--secondary-hue) - 14), 95%, 64%);
+
+    /*Yellow Ish*/
+    --tertiary-dark: hsl(calc(var(--tertiary-hue) - 27), 85%, 20%);
+    --tertiary-color: hsl(var(--tertiary-hue), 63%, 47%);
+    --tertiary-light: hsl(calc(var(--tertiary-hue) - 17), 71%, 32%);
+
+    --quadranary-color: hsl(var(--hue), 100%, 33%);
+    /* --primary-light: hsl(calc(var(--hue)*1.118), 80%, 25%); */
+    --text-primary: hsl(calc(var(--text-hue)*.75), 86%, 99%);
+    --text-secondary: hsl(calc(var(--text-hue)*1.24), 97%, 7%);
+    
+    --primary-accent: var(--secondary-light);
+    --opaque-background-light: hsla(var(--hue), 50%, 80%, 0.99);
+
+    --hyperlink-text: var(--secondary-light);
+    /* --hyperlink-text: hsl(abs(var(--hue) + 120), 50%, 23%) */
+  }
 }
+
 
 @media (prefers-color-scheme: light) {
   :root {
