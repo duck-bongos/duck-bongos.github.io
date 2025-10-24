@@ -8,6 +8,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
       --text: hsl(from var(--text-base) h s calc(100 - l));
+      
       --background: hsl(from var(--background-base) h calc(s - 40) calc(l - 90));
       --primary: hsl(from var(--primary-base) h calc(s - 10) calc(100 - l));
       --secondary: hsl(334, 76%, 64%);
@@ -23,6 +24,11 @@
       --accent-dark: hsl(from var(--accent) h s calc(l - 20));
       --accent-light: hsl(from var(--accent) h s calc(l + 20));
   }
+  ul li a:hover {
+  background-color: var(--accent);
+  color: var(--text-base);
+  font-weight: 500;
+}
   svg.career-icon {
     fill: #fff;
   }
@@ -31,7 +37,7 @@
   :root {
     --text: var(--text-base);
     --background: var(--background-base);
-    --primary: hsl(from var(--primary-base) h calc(s - 20) calc(l + 20));
+    --primary: hsl(from var(--primary-base) h calc(s - 10) calc(l + 20));
 
     --secondary: var(--secondary-base);
     --accent: var(--accent-base);
@@ -48,6 +54,11 @@
     --accent-light: hsl(from var(--accent) h s calc(l + 20));
 
   }
+  ul li a:hover {
+  background-color: var(--accent);
+  color: hsl(from var(--text-base) h s calc(100 - l));
+  font-weight: 500;
+}
   svg.career-icon {
       fill: #111;
     }
@@ -300,11 +311,11 @@ ul.navbar a {
   color: var(--text);
 }
 
-ul li a:hover {
+/* ul li a:hover {
   background-color: var(--accent);
-  color: var(--secondary);
-  font-weight: 600;
-}
+  color: var(--primary);
+  font-weight: 500;
+} */
 
 ul li a.selected {
   background-color: var(--accent-light);
