@@ -88,12 +88,13 @@ body {
 }
 
 div.main-container {
-  display: flex;
+  display: block;
   text-align: center;
   padding-left: 20%;
   padding-right: 20%;
   max-width: 60%;
   padding-bottom: 5%;
+  align-items: center;
 }
 
 @media (max-width: 800px) {
@@ -112,12 +113,16 @@ section {
   margin-top: 2%;
 }
 
+div.container {
+  align-items: center;
+}
+
 div.container p {
   text-align: left;
   text-indent: 2rem;
 }
 
-h2.section-heading {
+h2.section-heading, h3.section-heading {
   display: flex;
   justify-content: center;
   align-content: center;
@@ -189,6 +194,7 @@ a:visited {
 
 p {
   text-align: center;
+  text-indent: 0px;
 }
 
 img {
@@ -264,7 +270,7 @@ ul {
 
 .career-item {
   background-color: var(--background);
-  border-style: dashed;
+  
 }
 
 ul li {
