@@ -1,0 +1,64 @@
+:root {
+  --text-base: hsl(243, 76%, 5%);
+  --background-base: hsl(192, 100%, 99%);
+  --primary-base: hsl(189, 96%, 52%);
+  --secondary-base: hsl(51, 90%, 72%);
+  --accent-base: hsl(291, 72%, 62%);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+      --text: hsl(from var(--text-base) h s calc(100 - l));
+      
+      --background: hsl(from var(--background-base) h calc(s - 40) calc(l - 90));
+      --primary: hsl(from var(--primary-base) h calc(s - 10) calc(100 - l));
+      --secondary: hsl(334, 76%, 64%);
+      --accent: hsl(50, 76%, 73%);
+
+      --primary-dark: hsl(from var(--primary) h s calc(l - 10));
+      --primary-light: hsl(from var(--primary) h s calc(l + 20));
+      --primary-light: hsl(from var(--primary) h calc(s / 2) calc(l + 20));
+
+      --secondary-dark: hsl(from var(--secondary) h s calc(l - 10));
+      --secondary-light: hsl(from var(--secondary) h s calc(l + 10));
+
+      --accent-dark: hsl(from var(--accent) h s calc(l - 20));
+      --accent-light: hsl(from var(--accent) h s calc(l + 20));
+  }
+  ul li a:hover {
+  background-color: var(--accent);
+  color: var(--text-base);
+  font-weight: 500;
+}
+  svg.career-icon {
+    fill: #fff;
+  }
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --text: var(--text-base);
+    --background: var(--background-base);
+    --primary: hsl(from var(--primary-base) h calc(s - 10) calc(l + 20));
+
+    --secondary: var(--secondary-base);
+    --accent: var(--accent-base);
+
+    --primary-dark: hsl(from var(--primary) h s calc(l - 20));
+
+    --primary-light: hsl(from var(--primary) h s calc(l + 20));
+
+    --secondary-dark: hsl(from var(--secondary) h s calc(l - 40));
+    --secondary-light: hsl(from var(--secondary) h s calc(l + 10));
+
+    --accent-dark: hsl(from var(--accent) h s calc(l - 20));
+    --accent-light: hsl(from var(--accent) h s calc(l + 20));
+
+  }
+  ul li a:hover {
+  background-color: var(--accent);
+  color: hsl(from var(--text-base) h s calc(100 - l));
+  font-weight: 500;
+}
+  svg.career-icon {
+      fill: #111;
+    }
+}
