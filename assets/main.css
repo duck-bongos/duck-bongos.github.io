@@ -212,7 +212,7 @@ img {
   border-radius: 1rem;
   padding: 1rem 1rem 1rem 1rem;
   margin: 1rem 1rem 1rem 1rem;
-  background-color: var(--primary);
+  background-color: var(--primary-dark);
 }
 a.card p {
   text-indent: 0px;
@@ -278,6 +278,7 @@ ul li {
 }
 
 ul.navbar {
+  background-color: var(--primary-dark);
   display: flex;
   flex-wrap: wrap;
 }
@@ -291,14 +292,14 @@ ul li a {
 }
 
 div.navbar-container {
-  background-color: var(--primary);
+  background-color: var(--primary-dark);
   justify-content: center;
 }
 
 div.navbar {
   margin-top: 0;
   display: flex;
-  background-color: var(--primary);
+  background-color: var(--primary-dark);
   font-optical-sizing: auto;
   align-content: center;
   /* padding-left: 20%;
