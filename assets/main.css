@@ -25,6 +25,14 @@
     --accent-dark: hsl(from var(--accent) h s calc(l - 20));
     --accent-light: hsl(from var(--accent) h s calc(l + 20));
   }
+  div.navbar {
+    background-color: var(--primary-dark);
+  }
+
+  div.navbar-container {
+    background-color: var(--primary-dark);
+  }
+
   ul li a:hover {
     background-color: var(--accent);
     color: var(--text-base);
@@ -57,7 +65,6 @@
   .card {
     background-color: var(--primary-dark);
   }
-
 
   ul.navbar {
     background-color: var(--primary-dark);
@@ -98,6 +105,13 @@
     --accent-dark: hsl(from var(--accent) h s calc(l - 20));
     --accent-light: hsl(from var(--accent) h s calc(l + 20));
   }
+  div.navbar {
+    background-color: var(--primary);
+  }
+
+  div.navbar-container {
+    background-color: var(--primary);
+  }
   ul li a:hover {
     background-color: var(--accent);
     color: hsl(from var(--text-base) h s calc(100 - l));
@@ -117,7 +131,6 @@
   ul.navbar {
     background-color: var(--primary);
   }
-
 
   ul.navbar a {
     color: var(--text);
@@ -355,9 +368,9 @@ div.navbar-container {
 }
 
 div.navbar {
+  background-color: var(--primary-dark);
   margin-top: 0;
   display: flex;
-  background-color: var(--primary-dark);
   font-optical-sizing: auto;
   align-content: center;
   /* padding-left: 20%;
