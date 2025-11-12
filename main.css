@@ -123,10 +123,6 @@ a.text-link:visited {
   color: var(--secondary-dark);
 }
 
-a:visited {
-  color: var(--secondary);
-}
-
 p {
   text-align: center;
   text-indent: 0px;
