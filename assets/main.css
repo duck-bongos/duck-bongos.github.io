@@ -363,12 +363,10 @@ ul li a {
 }
 
 div.navbar-container {
-  background-color: var(--primary-dark);
   justify-content: center;
 }
 
 div.navbar {
-  background-color: var(--primary-dark);
   margin-top: 0;
   display: flex;
   font-optical-sizing: auto;
